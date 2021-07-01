@@ -1,0 +1,219 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer base{
+  .header{
+    @apply bg-gray-100 h-16 top-0 z-50  sticky shadow-lg
+  }
+  .nav-container {
+    @apply flex justify-between items-center p-2
+  }
+  .nav-item-container{
+    @apply space-x-4 flex items-center
+  }
+  .nav-item-account{
+    @apply md:flex space-x-2 items-center justify-center mt-4 sm:mt-0 hidden cursor-pointer
+  }
+  .nav-item-cart{
+    @apply flex space-x-2 items-center justify-center mt-4 md:mt-0 cursor-pointer
+  }
+  .nav-slide{
+    @apply space-y-4
+  }
+  .home-section{
+   height: calc(100vh-theme('spacing-16')) 
+  }
+  .home-section{
+    @apply bg-gray-100
+  }
+  .home-container{
+    @apply h-full space-y-4 md:space-y-0 md:min-h-screen flex flex-col md:flex-row p-10 md:items-center md:justify-center  
+  }
+  .home-left{
+    @apply hidden lg:block md:w-1/3
+  }
+  .home-left-head{
+    @apply  text-5xl sm:text-7xl font-bold whitespace-nowrap text-gray-800 overflow-hidden
+  }
+  .home-left-heading{
+    @apply text-3xl mt-2 sm:text-5xl text-gray-800
+  }
+  .home-left-text{
+    @apply mt-4 text-gray-800
+  }
+  .home-image{
+    @apply md:w-2/3 flex justify-center
+  }
+  .home-right{
+    @apply md:w-1/3
+  }
+  .home-right-head{
+    @apply text-center text-3xl font-semibold  md:text-left
+  }
+  .home-right-text{
+    @apply text-center mt-2 md:mt-4 md:text-left
+  }
+  .product-section{
+    @apply flex justify-center bg-gray-50
+  }
+  .product-container{
+    @apply container w-full h-full p-10
+  }
+  .product-header{
+    @apply text-center text-3xl font-semibold
+  }
+  .card-container{
+    @apply mt-4 space-y-4 md:space-y-0 grid grid-cols-1 md:grid-cols-4 md:gap-4
+  }
+  .card-body{
+    @apply flex flex-col shadow-lg rounded-lg col-span-1
+  }
+  .card-image{
+    @apply w-auto h-44 object-contain
+  }
+  .card-details{
+    @apply p-2
+  }
+  .card-heading{
+    @apply text-lg text-gray-800 font-semibold
+  }
+  .card-text{
+    @apply text-base text-gray-800 font-semibold
+  }
+  .card-footer{
+@apply text-center p-2 bg-gray-200 font-semibold  cursor-pointer
+  }
+  .footer{
+    @apply p-10 bg-gray-100
+  }
+  .footer-container{
+    @apply flex flex-col space-y-4 sm:grid sm:grid-cols-4 gap-4 sm:items-center
+  }
+  .footer-heading{
+    @apply font-bold mb-2
+  }
+  .copyright{
+@apply mt-8
+  }
+  .detail-section{
+    @apply h-full p-10 bg-gray-50
+  }
+  .detail-container{
+    @apply flex flex-col sm:flex-row sm:items-center
+  }
+  .detail-image{
+    @apply sm:w-2/3 sm:flex sm:justify-center
+  }
+  .detail-back{
+    @apply hidden sm:flex sm:space-x-2 sm:items-center sm:text-gray-400 cursor-pointer
+  }
+  .detail-item-container{
+    @apply mt-4 sm:mt-0 sm:w-2/3 sm:space-y-4
+  }
+  .detail-item-header{
+    @apply text-3xl font-bold sm:text-7xl text-gray-800
+  }
+  .detail-item-price{
+    @apply text-2xl font-semibold sm:text-5xl sm:mt-2 text-gray-800
+  }
+  .detail-text-section{
+    @apply mt-2 sm:mt-4 text-gray-800
+  }
+  .detail-about{
+    @apply text-2xl font-semibold sm:text-3xl
+  }
+  .detail-description{
+    @apply sm:mt-2 sm:text-left sm:w-1/2 md:w-full lg:w-1/2
+  }
+  .detail-add-cart{
+    @apply text-center bg-gray-200 p-2 mt-4 rounded-lg hover:bg-gray-300 sm:cursor-pointer sm:w-1/2
+  }
+  .login-signup-container{
+    @apply max-w-3xl mx-auto items-center  h-full
+  }
+  .login-section{
+  @apply max-w-xl mx-auto p-4
+  }
+  .login-container{
+    @apply p-6  
+  }
+  .login-heading{
+    @apply text-2xl sm:text-4xl font-bold text-gray-700 mt-2
+  }
+  .form{
+    @apply p-5 shadow-lg border-2 border-gray-300
+  }
+  .form-body{
+    @apply mb-4 mt-2
+  }
+  .form-control{
+    @apply mb-4 mt-2
+  }
+  .form-input{
+    @apply w-full h-10 sm:h-12  border-2 border-gray-400 focus-within:outline-none p-2
+  }
+  .form-button{
+    @apply w-full bg-gray-500 mb-4 mt-4 p-3 text-white text-lg rounded-full hover:bg-gray-700 transition ease-in
+  }
+  .form-footer{
+    @apply text-center mt-10
+  }
+  .form-footer-text{
+    @apply text-center text-base sm:text-lg
+  }
+  .form-footer-span{
+    @apply text-gray-700 font-semibold hover:text-gray-900 cursor-pointer ml-2
+  }
+  .signup-section{
+    @apply p-4 
+  }
+  .signup-container{
+    @apply mx-auto max-w-lg p-4  mt-8 bg-white rounded-lg
+  }
+  .signup-heading{
+    @apply text-2xl sm:text-4xl font-bold text-gray-700 mt-2
+  }
+  .dash-container{
+    @apply bg-gray-50 h-screen
+  }
+  .dash-nav{
+    @apply flex space-x-6 justify-end p-5
+  }
+  .dash-icon {
+    @apply flex items-center
+  }
+  .dash-form-container{
+    @apply max-w-lg mx-auto p-5 sm:p-0
+  }
+  .dash-form-head{
+    @apply text-center font-semibold
+  }
+  .dash-textarea{
+    @apply w-full border-2 border-gray-400 p-2
+  }
+  .admin-container{
+    @apply max-w-md mx-auto flex h-screen items-center justify-center
+  }
+  .admin-button-container{
+    @apply justify-center flex
+  }
+  .admin-button {
+  @apply  bg-gray-300 py-2 px-4 rounded-full
+  }
+}
