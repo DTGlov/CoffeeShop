@@ -8,15 +8,25 @@ Fullstack coffee shop built with the MERN stack. Includes customer registration 
 3. Run ```npm start ```
 
 ### Features
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/homepage.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/homepage%20productlist.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Product%20detail.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/client%20login.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/client%20signup.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/shopping%20cart.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/checkout.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Admin%20Login.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Admin%20Signup.png)
+#### Homepage
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/homepage.png)
+#### Product List
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/homepage%20productlist.png)
+#### Product Detail
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/Product%20detail.png)
+#### Client Login
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/client%20login.png)
+#### Client Signup
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/client%20signup.png)
+#### Shopping Cart
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/shopping%20cart.png)
+#### Orders
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/checkout.png)
+#### Admin Login
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/Admin%20Login.png)
+#### Admin Registration
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/Admin%20Signup.png)
+#### Admin Dashboard
 ![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/Admin%20Dashboard.png)
 
 ### Author
