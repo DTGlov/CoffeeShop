@@ -17,7 +17,7 @@ Fullstack coffee shop built with the MERN stack. Includes customer registration 
 ![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/checkout.png)
 ![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Admin%20Login.png)
 ![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Admin%20Signup.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/Admin%20Dashboard.png)
+![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/readme%20images/Admin%20Dashboard.png)
 
 ### Author
 > 👤 David Tawiah Glover
