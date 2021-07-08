@@ -8,16 +8,16 @@ Fullstack coffee shop built with the MERN stack. Includes customer registration 
 3. Run ```npm start ```
 
 ### Features
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/1)homepage.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/2)homepage%20productlist.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/3)Product%20detail.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/5)client%20login.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/13)client%20signup.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/10)shopping%20cart.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/7)checkout.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/8)Admin%20Login.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/9)Admin%20Signup.png)
-![Alt Text](https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/11)Admin%20Dashboard.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/1)homepage.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/2)homepage%20productlist.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/3)Product%20detail.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/5)client%20login.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/13)client%20signup.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/10)shopping%20cart.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/7)checkout.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/8)Admin%20Login.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/9)Admin%20Signup.png)
+![Alt Text] (https://github.com/DTGlov/CoffeeShop/blob/main/coffeeshop/11)Admin%20Dashboard.png)
 
 ### Author
 > 👤 David Tawiah Glover
