@@ -25,6 +25,9 @@ app.use('/products', postRoutes);
 app.use('/users', userRoutes);
 app.use('/admin', adminRoutes);
 
+app.get('/', (req, res) => {
+  res.send("Welocome to CoffeeShop API")
+})
 
 const PORT = process.env.PORT || 5000;
 

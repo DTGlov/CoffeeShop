@@ -70,10 +70,12 @@ function Login({ toggleSignup }) {
             />
           </div>
 
-          <button className="form-button" type="submit" onClick={handleSubmit}>Login</button>
+          <button className="form-button" type="submit" onClick={handleSubmit}>
+            Login
+          </button>
           <GoogleLogin
-            //GET CLIENT CREDENTIALS FROM GOOGLE DEVELOPERS
-            clientId="CLIENT_CREDENTIAL"
+            //get client id from google.developers.com
+            clientId="CLIENT ID"
             render={(renderProps) => (
               <button
                 className="form-button bg-blue-400"
