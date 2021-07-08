@@ -1,23 +1,92 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { GoogleLogin } from "react-google-login";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { HOMEPAGE } from "../../constants/routes";
+import { AUTH } from "../../redux/actionTypes";
+
+import {signin} from '../../redux/actions/auth'
+
+
 
 function Login({ toggleSignup }) {
+  const history = useHistory();
+  const dispatch = useDispatch();
+ const [formData, setFormData] = useState({
+   email: "",
+   password: "",
+ });
+  
   useEffect(() => {
     document.title = "Login";
   }, []);
+
+  const handleSubmit = (e) => {
+        e.preventDefault();
+    dispatch(signin(formData, history));
+
+  }
+
+  const googleSuccess =async(res)=>{
+    const result = res?.profileObj;
+    const token = res?.tokenId;
+    try {
+      dispatch({ type: AUTH, data: { result, token } });
+      history.push(HOMEPAGE)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  const googleFailure = (error) => {
+    console.log(error)
+    console.log("Google Sign In was unsuccessful.Try Again Later")
+  }
+
   return (
     <div className="login-section">
       <div className="login-container">
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <h1 className="login-heading">Log In</h1>
           <div className="form-body">
             <label htmlFor="Email">Email</label>
-            <input type="Email" className="form-input" />
+            <input
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              type="Email"
+              className="form-input"
+            />
           </div>
           <div className="form-control">
             <label htmlFor="Password">Password</label>
-            <input type="password" className="form-input" />
+            <input
+              value={formData.password}
+              onChange={(e) =>
+                setFormData({ ...formData, password: e.target.value })
+              }
+              type="password"
+              className="form-input"
+            />
           </div>
-          <button className="form-button">Login</button>
+
+          <button className="form-button" type="submit" onClick={handleSubmit}>Login</button>
+          <GoogleLogin
+            //GET CLIENT CREDENTIALS FROM GOOGLE DEVELOPERS
+            clientId="CLIENT_CREDENTIAL"
+            render={(renderProps) => (
+              <button
+                className="form-button bg-blue-400"
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+              >
+                Sign in with Google
+              </button>
+            )}
+            onSuccess={googleSuccess}
+            onFailure={googleFailure}
+            cookiePolicy="single_host_origin"
+          />
         </form>
       </div>
       <div className="form-footer">

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/coffee.svg';
 
 const date = new Date()
 
@@ -8,7 +8,18 @@ function Footer() {
       <footer className="footer">
         <div className="footer-container">
           <div>
-            <img src={logo} alt="company logo" className="animate-bounce" />
+            {/* <div>
+              Icons made by{" "}
+              <a href="https://www.freepik.com" title="Freepik">
+                Freepik
+              </a>{" "}
+              from{" "}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
+            </div> */}
+              <img src={logo} alt="company logo" className="h-14"/>
+           
           </div>
 
           <div>
@@ -29,9 +40,10 @@ function Footer() {
             <p>Inclusion</p>
             <p>Culture & Value</p>
           </div>
-            </div>
-            <h1 className="copyright">Copyright &copy; {date.getFullYear()} <span>DTGL❤VER</span></h1>
-           
+        </div>
+        <h1 className="copyright">
+          Copyright &copy; {date.getFullYear()} <span>DTGL❤VER</span>
+        </h1>
       </footer>
     );
 }
