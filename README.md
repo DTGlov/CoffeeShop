@@ -1,5 +1,5 @@
 # CoffeeShop
-Fullstack coffee shop built with the MERN stack. Includes customer registration and authentication,Redux and Redux thunk to manage the state of cart items,Protected Routes to prevent access to certain routes if a token does not exist, admin registration and login and an Admin Dashboard to add/edit and delete products. This web app has all the features of an ecommerce shop with the exception of payment.
+Fullstack coffee shop built with the MERN stack. Includes customer registration and authentication,Google Authentication,Redux and Redux thunk to manage the state of cart items,Protected Routes to prevent access to certain routes if a token does not exist, admin registration and login and an Admin Dashboard to add/edit and delete products. This web app has all the features of an ecommerce shop with the exception of payment.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Getting Started
